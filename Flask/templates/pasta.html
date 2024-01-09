@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link rel="icon" href="{{ url_for('favicon') }}" type="image/favicon.icon">
+    <title>Pasta and Wine</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo" id="image">
+
+        <h1 class="fade-in">Pasta and Wine</h1>
+
+        <p>Cinq amis sont côte à côte en train de planifier un dîner ensemble.
+            Chacun aime différents types de pâtes et de vins de différents pays.
+            Découvrez quel est le plat de pâtes que Holly préfère le plus.</p>
+
+        <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo_reverse" id="image2">
+
+    </div>
+
+    <footer>
+        <p>© 2024 <a href="https://www.linkedin.com/in/nathan-badoual-931a0b206/">Nathan Badoual</a> et <a href="https://www.linkedin.com/in/mat%C3%A9o-grimaud-1304a2210/">Matéo Grimaud</a>. Réalisé avec passion et beaucoup d'amour.</p>
+    </footer>
+
+</body>
+</html>
+
+<script>
+
+    document.getElementById('image').addEventListener('mouseover', function() {
+
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+
+    document.getElementById('image').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f2f2f2';
+    });
+
+    document.getElementById('image2').addEventListener('mouseover', function() {
+
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+
+    document.getElementById('image2').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f2f2f2';
+    });
+
+</script>
