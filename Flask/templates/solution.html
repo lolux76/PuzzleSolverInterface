@@ -1,0 +1,31 @@
+<!-- templates/solutions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions</title>
+</head>
+<body>
+    <h1>Solutions</h1>
+
+    {% if solutions %}
+        <table border="1">
+            <tr>
+                <th>People</th>
+                <th>Places</th>
+                <th>Objects</th>
+            </tr>
+            {% for solution in solutions %}
+                <tr>
+                    <td>{{ solution['People'] }}</td>
+                    <td>{{ solution['Places'] }}</td>
+                    <td>{{ solution['Objects'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No solutions found.</p>
+    {% endif %}
+</body>
+</html>

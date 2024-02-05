@@ -113,6 +113,10 @@ h1, h2, h3, button, hr {
     opacity: 0;
 }
 
+table{
+    font-size: .75rem;
+}
+
 select{
     min-width: 120px;
 }
@@ -150,4 +154,68 @@ select{
     border-bottom: 1px solid #ddd;
     padding-bottom: .125rem;
     text-align: left;
+}
+
+.middle-table{
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.middle-table tr td{
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.vertical-text{
+    display: inline-block;
+    height: 100%;
+}
+
+.vertical-text-inner{
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1.5;
+    transform: translate(0%, 100%) rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+.top-table{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    min-height: 100px;
+}
+
+.top-table tr:first-child{
+    min-height: 25px;
+    width: 100%;
+}
+
+.top-table tr:first-child td{
+    text-align: center;
+}
+
+.top-table tr:last-child{
+    min-height: 75px;
+}
+
+.top-table tr:last-child td{
+    border-right: 1px solid #ddd;
+}
+
+.side-table tr:last-child td{
+    border-bottom: 1px solid #ddd;
+}
+
+.validated{
+    background-color: green;
+}
+
+.invalidated{
+    background-color: red;
+}
+
+.submit-button{
+    margin-top: 10px;
 }

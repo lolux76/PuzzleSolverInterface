@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/pasta.css') }}">
     <link rel="icon" href="{{ url_for('favicon') }}" type="image/favicon.icon">
     <title>Pasta and Wine</title>
 </head>
@@ -15,9 +15,171 @@
 
         <h1 class="fade-in">Pasta and Wine</h1>
 
-        <p>Cinq amis sont côte à côte en train de planifier un dîner ensemble.
+        <p class="fade-in">Cinq amis sont côte à côte en train de planifier un dîner ensemble.
             Chacun aime différents types de pâtes et de vins de différents pays.
-            Découvrez quel est le plat de pâtes que Holly préfère le plus.</p>
+            Découvrez quel est le plat de pâtes qu'Holly préfère le plus.</p>
+
+
+        <table border="1" class="table fade-in">
+            <tr>
+                <th></th>
+                <th>Femme 1</th>
+                <th>Femme 2</th>
+                <th>Femme 3</th>
+                <th>Femme 4</th>
+                <th>Femme 5</th>
+            </tr>
+
+            <tr>
+                <td>Shirt</td>
+                {% for col in range(5) %}
+                <td>
+                    <select name="select{{ row }}{{ col }}">
+                        <option value="null"></option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                        <option value="red">red</option>
+                        <option value="white">white</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                {% for col in range(5) %}
+                <td>
+                    <select name="select{{ row }}{{ col }}">
+                        <option value="null"></option>
+                        <option value="andrea">Andrea</option>
+                        <option value="holly">Holly</option>
+                        <option value="julie">Julie</option>
+                        <option value="leslie">Leslie</option>
+                        <option value="victoria">Victoria</option>
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td>Surname</td>
+                {% for col in range(5) %}
+                <td>
+                    <select name="select{{ row }}{{ col }}">
+                        <option value="null"></option>
+                        <option value="andrea">Brown</option>
+                        <option value="holly">Davies</option>
+                        <option value="julie">Lopes</option>
+                        <option value="leslie">Miller</option>
+                        <option value="wilson">Wilson</option>
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td>Pasta</td>
+                {% for col in range(5) %}
+                <td>
+                    <select name="select{{ row }}{{ col }}">
+                        <option value="null"></option>
+                        <option value="farfalle">farfalle</option>
+                        <option value="lasagne">lasagne</option>
+                        <option value="penne">penne</option>
+                        <option value="spaghetti">spaghetti</option>
+                        <option value="ravioli">ravioli</option>
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td>Wine</td>
+                {% for col in range(5) %}
+                <td>
+                    <select name="select{{ row }}{{ col }}">
+                        <option value="null"></option>
+                        <option value="australian">Australian</option>
+                        <option value="argentine">Argentine</option>
+                        <option value="chilean">Chilean</option>
+                        <option value="french">French</option>
+                        <option value="italian">Italian</option>
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                {% for col in range(5) %}
+                <td>
+                    <select name="select{{ row }}{{ col }}">
+                        <option value="null"></option>
+                        <option value="30">30 years</option>
+                        <option value="35">35 years</option>
+                        <option value="40">40 years</option>
+                        <option value="45">45 years</option>
+                        <option value="50">50 years</option>
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+
+        </table>
+
+        <hr class="fade-in">
+
+        <div class="clues fade-in">Indices
+            <hr class="fade-in">
+            <ul>
+                <li class=""><span></span>La femme qui porte un t-shirt blanc est à côté de la femme qui aime les vins Lombardi.</li>
+
+                <li class=""><span></span>Mme Miller est quelque part entre Mme Davis et Mme Brown, dans cet ordre.</li>
+
+                <li class=""><span></span>La femme la plus jeune est en troisième position.</li>
+
+                <li class=""><span></span>La femme de 45 ans est quelque part à droite de la femme qui porte un t-shirt rouge.</li>
+
+                <li class=""><span></span>La femme qui aime le vin chilien aime également les farfalles.</li>
+
+                <li class=""><span></span>A la première place se trouve la femme qui aime les vins argentins.</li>
+
+                <li class=""><span></span>Andrea est exactement à droite de la femme de 35 ans.</li>
+
+                <li class=""><span></span>La femme qui porte le t-shirt Bleu est quelque part entre Mme Davis et Mme Holly, dans cet ordre.</li>
+
+                <li class=""><span></span>Victoria est à côté de Leslie.</li>
+
+                <li class=""><span></span>La femme qui porte le t-shirt rouge est quelque part à gauche de la femme qui aime les vins australiens.</li>
+
+                <li class=""><span></span>Mme Wilson est à côté de la femme de 30ans.</li>
+
+                <li class=""><span></span>Leslie est directement à gauche de la femme de 30ans.</li>
+
+                <li class=""><span></span>Holly est quelque part à droite de la femme qui porte un t-shirt rouge.</li>
+
+                <li class=""><span></span>Mme Brown est directement à gauche de Julie.</li>
+
+                <li class=""><span></span>La femme la plus jeune aime les pennes.</li>
+
+                <li class=""><span></span>Mme Wilson porte un t-shirt blanc.</li>
+
+                <li class=""><span></span>La femme qui aime les lasagnes est quelque part entre celle qui aime les vins italiens et celle qui aime les spaghetti, dans cet ordre.</li>
+
+                <li class=""><span></span>A la deuxième place se trouve la femme qui porte un t-shirt bleu.</li>
+
+                <li class=""><span></span>.La femme de 40ans aime les lasagnes.</li>
+
+                <li class=""><span></span>Mme Lopes est à la 5ᵉ position.</li>
+
+                <li class=""><span></span>La femme qui aime les vins australiens est quelque part entre Victoria et celle qui aime les vins de Bordeaux, dans cet ordre.</li>
+
+                <li class=""><span></span>La femme qui porte un t-shirt jaune est directement à gauche de celle de 35ans.</li>
+
+            </ul>
+        </div>
+
 
         <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo_reverse" id="image2">
 

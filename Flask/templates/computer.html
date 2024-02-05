@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/film.css') }}">
+    <link rel="icon" href="{{ url_for('favicon') }}" type="image/favicon.icon">
+    <title>A new personnal computer</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo" id="image">
+
+        <h1 class="fade-in">A new personnal computer</h1>
+
+        <p class="fade-in">
+
+Andrew has just bought one of these five different models of computers. Each computer has a different screen size, processor power, hard drive capacity and price. With the help of the clues, could you figure out which computer has been chosen by Andrew?</p>
+
+
+        <table border="1" class="table fade-in">
+
+        <tbody>
+
+            <tr>
+
+                <td></td>
+
+                <td><table class="top-table">
+        <tbody>
+            <tr>
+                <td colspan="5">Processor</td>
+            </tr>
+            <tr>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            2.0 MHz
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            2.3 MHz
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            2.5 MHz
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            2.7 MHz
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            3.1 MHz
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table></td>
+
+                <td><table class="top-table">
+        <tbody>
+            <tr>
+                <td colspan="5">Hard Disk</td>
+            </tr>
+            <tr>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            250 Gb
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            320 Gb
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            500 Gb
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            750 Gb
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            1024 Gb
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table></td>
+
+                <td><table class="top-table">
+        <tbody>
+            <tr>
+                <td colspan="5">Price</td>
+            </tr>
+            <tr>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            $699,00
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            $999,00
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            $1.149,00
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            $1.349,00
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            $1.649,00
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table></td>
+
+            </tr>
+
+            <tr>
+
+                <td><table class="side-table">
+        <tbody>
+
+            <tr>
+
+                <td rowspan="5">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Monitor
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">13'</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">15'</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">15'6</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">21'5</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">27'</td>
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+            </tr>
+
+            <tr>
+
+                <td><table class="side-table">
+        <tbody>
+
+            <tr>
+
+                <td rowspan="5">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Price
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">$699,00</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">$999,00</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">$1.149,00</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">$1.349,00</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">$1.649,00</td>
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+
+
+            </tr>
+
+            <tr>
+
+                <td><table class="side-table">
+        <tbody>
+
+            <tr>
+
+                <td rowspan="5">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Hard Disk
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">250 Gb</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">320 Gb</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">500 Gb</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">750 Gb</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">1024 Gb</td>
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+
+
+
+
+            </tr>
+
+        </tbody>
+
+
+        </table>
+
+        <button id="submit-button" class="fade-in submit-button">Soumettre</button>
+
+        <hr class="fade-in">
+
+        <div class="clues fade-in">Indices
+            <hr class="fade-in">
+            <ul>
+
+
+                                <li data-clue-id="0">1. Andrew bought the computer which was three hundred Euros less than the PC which has a processor that is 0.4 MHz more powerful than the one which has a 21.5' screen.</li>
+
+                                <li data-clue-id="1">2. The five computers are: the one chosen by Andrew (which doesn't have the 27' screen), the one which has the 2.0-MHz processor, the computer that has a 250 GB HD, the one which has a price of 1,149 Euros and the computer (which doesn't have the 15' screen) that has the HD bigger than the one chosen by Andrew but smaller than that the one which has the 2.7 MHz processor.</li>
+
+                                <li data-clue-id="2">3. The computer with the 320 Gb HD has either the 2.0 or the 2.3 MHz processor.The processor of the computer which has the 15' screen is more powerful than the one in the computer that costs 999 euros but less powerful than the processor that is included in the 1,349 Euros computer.</li>
+
+                                <li data-clue-id="3">4. The computer that has the 27' screen doesn't have the 320 Gb hard drive. The 500 GB HD is included in the computer that has a more powerful processor and a larger size screen than the one which costs 699 euros (which doesn't include the 320 Gb HD).</li>
+
+
+            </ul>
+        </div>
+
+
+        <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo_reverse" id="image2">
+
+    </div>
+
+    <footer>
+        <p>© 2024 <a href="https://www.linkedin.com/in/nathan-badoual-931a0b206/">Nathan Badoual</a> et <a href="https://www.linkedin.com/in/mat%C3%A9o-grimaud-1304a2210/">Matéo Grimaud</a>. Réalisé avec passion et beaucoup d'amour.</p>
+    </footer>
+
+</body>
+</html>
+
+<script>
+
+    document.getElementById('image').addEventListener('mouseover', function() {
+
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+
+    document.getElementById('image').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f2f2f2';
+    });
+
+    document.getElementById('image2').addEventListener('mouseover', function() {
+
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+
+    document.getElementById('image2').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f2f2f2';
+    });
+
+
+    // Logique du tableau
+document.addEventListener('DOMContentLoaded', function () {
+    // Récupérer tous les tbody
+    var tableList = document.querySelectorAll('.middle-table');
+
+    // Ajouter un gestionnaire d'événements à chaque tbody
+    tableList.forEach(function (table) {
+        // Récupérer toutes les cellules de ce tbody ayant les attributs data-x et data-y
+        var cells = table.querySelectorAll('td[data-x][data-y]:not(.js-item)');
+
+        // Ajouter un gestionnaire d'événements à chaque cellule
+        cells.forEach(function (cell) {
+            cell.addEventListener('click', function () {
+                // Récupérer les indices x et y de la cellule
+                var x = cell.getAttribute('data-x');
+                var y = cell.getAttribute('data-y');
+
+                // Marquer la cellule comme "validée"
+                cell.classList.add('validated');
+                if(cell.classList.contains('invalidated')){
+                    cell.classList.remove('invalidated');
+                }
+
+                // Marquer les autres cellules de la même ligne comme "invalide"
+                cells.forEach(function (otherCell) {
+                    if (otherCell.getAttribute('data-y') === y && otherCell !== cell) {
+                        otherCell.classList.add('invalidated');
+                        if(otherCell.classList.contains('validated')){
+                            otherCell.classList.remove('validated');
+                        }
+                    }
+                });
+
+                // Marquer les autres cellules de la même colonne comme "invalide"
+                cells.forEach(function (otherCell) {
+                    if (otherCell.getAttribute('data-x') === x && otherCell !== cell) {
+                        otherCell.classList.add('invalidated');
+                        if(otherCell.classList.contains('validated')){
+                            otherCell.classList.remove('validated');
+                        }
+                    }
+                });
+            });
+        });
+    });
+
+    // Ajouter un gestionnaire d'événements au bouton d'envoi
+    var submitButton = document.getElementById('submit-button');
+    submitButton.addEventListener('click', function () {
+        // Récupérer les cellules validées
+        var validatedCells = document.querySelectorAll('.validated');
+
+        // Envoyer les données au backend (vous devez implémenter cette partie)
+        // Vous pouvez utiliser fetch() ou tout autre moyen pour envoyer les données au serveur
+        // par exemple, vous pouvez les envoyer en tant que tableau d'indices x et y des cellules validées
+        var dataToSend = Array.from(validatedCells).map(function (cell) {
+            return {
+                x: cell.getAttribute('data-x'),
+                y: cell.getAttribute('data-y')
+            };
+        });
+
+        // Exemple d'utilisation de fetch() pour envoyer les données
+        fetch('/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataToSend)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Backend response:', data);
+        })
+        .catch(error => {
+            console.error('Error during fetch:', error);
+        });
+    });
+});
+</script>

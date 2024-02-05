@@ -113,10 +113,6 @@ h1, h2, h3, button, hr {
     opacity: 0;
 }
 
-select{
-    min-width: 120px;
-}
-
 .fade-in {
     animation: fadeIn 1s ease-out forwards;
 }
@@ -132,22 +128,4 @@ select{
     }
 }
 
-.table{
-    margin: auto;
-}
 
-.clues ul{
-    column-count: 2;
-    column-gap: 1.5rem;
-    padding-left: 0;
-    list-style: none;
-    margin: 50px 0 0;
-}
-
-.clues ul li{
-    margin-bottom: .125rem;
-    page-break-inside: avoid;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: .125rem;
-    text-align: left;
-}

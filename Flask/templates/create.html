@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/pasta.css') }}">
+    <link rel="icon" href="{{ url_for('favicon') }}" type="image/favicon.icon">
+    <title>Logic Problem Generator</title>
+</head>
+<body>
+    <h1>Logic Problem Generator</h1>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        {{ form.person1.label }} {{ form.person1 }}
+        {{ form.person2.label }} {{ form.person2 }}
+        {{ form.person3.label }} {{ form.person3 }}
+        <br>
+        {{ form.place1.label }} {{ form.place1 }}
+        {{ form.place2.label }} {{ form.place2 }}
+        {{ form.place3.label }} {{ form.place3 }}
+        <br>
+        {{ form.object1.label }} {{ form.object1 }}
+        {{ form.object2.label }} {{ form.object2 }}
+        {{ form.object3.label }} {{ form.object3 }}
+        <br>
+        {{ form.constraints.label }} {{ form.constraints }}
+        <br>
+        {{ form.submit }}
+    </form>
+</body>
+</html>

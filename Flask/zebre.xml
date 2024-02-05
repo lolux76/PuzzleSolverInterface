@@ -1,0 +1,68 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <var id="Leslie"> 1..5 </var>
+    <var id="Holly"> 1..5 </var>
+    <var id="Andrea"> 1..5 </var>
+    <var id="Julie"> 1..5 </var>
+    <var id="Victoria"> 1..5 </var>
+    <var id="Wilson"> 1..5 </var>
+    <var id="Miller"> 1..5 </var>
+    <var id="Davis"> 1..5 </var>
+    <var id="Brown"> 1..5 </var>
+    <var id="Lopes"> 1..5 </var>
+    <var id="Red"> 1..5 </var>
+    <var id="Blue"> 1..5 </var>
+    <var id="White"> 1..5 </var>
+    <var id="Yellow"> 1..5 </var>
+    <var id="Green"> 1..5 </var>
+    <var id="Argentine"> 1..5 </var>
+    <var id="Italian"> 1..5 </var>
+    <var id="Chilean"> 1..5 </var>
+    <var id="Australian"> 1..5 </var>
+    <var id="Bordeaux"> 1..5 </var>
+    <var id="Farfalle"> 1..5 </var>
+    <var id="Lasagne"> 1..5 </var>
+    <var id="Penne"> 1..5 </var>
+    <var id="Spaghetti"> 1..5 </var>
+    <var id="Ravioli"> 1..5 </var>
+    <var id="y30"> 1..5 </var>
+    <var id="y35"> 1..5 </var>
+    <var id="y40"> 1..5 </var>
+    <var id="y45"> 1..5 </var>
+    <var id="y50"> 1..5 </var>
+  </variables>
+  <constraints>
+    <allDifferent> Leslie Holly Andrea Julie Victoria </allDifferent>
+    <allDifferent> Wilson Miller Davis Brown Lopes </allDifferent>
+    <allDifferent> Red Blue White Yellow Green </allDifferent>
+    <allDifferent> Argentine Italian Chilean Australian Bordeaux </allDifferent>
+    <allDifferent> Farfalle Lasagne Penne Spaghetti Ravioli </allDifferent>
+    <allDifferent> y30 y35 y40 y45 y50 </allDifferent>
+    <intension note="Contraintes fournies dans la description - The woman wearing the White shirt is next to the woman who likes Lombardian (=Italian) wines."> eq(dist(White,Italian),1) </intension>
+    <intension note="Ms Miller is somewhere between Ms Davis and Ms Brown, in that order."> lt(Davis,Miller) </intension>
+    <intension> lt(Miller,Brown) </intension>
+    <intension note="The youngest woman is at the third position."> eq(y30,3) </intension>
+    <intension note="The 45-year-old woman is somewhere to the right of the woman wearing the Red shirt."> lt(Red,y45) </intension>
+    <intension note="The woman who likes Chilean wines also likes Farfalle."> eq(Chilean,Farfalle) </intension>
+    <intension note="At the first position is the woman that likes Argentine wines."> eq(Argentine,1) </intension>
+    <intension note="Andrea is exactly to the right of the 35-year-old woman."> eq(Andrea,add(y35,1)) </intension>
+    <intension note="The woman wearing the Blue shirt is somewhere between Ms Davis..."> lt(Davis,Blue) </intension>
+    <intension note="...and Holly, in that order."> lt(Blue,Holly) </intension>
+    <intension note="Victoria is next to Leslie."> eq(dist(Victoria,Leslie),1) </intension>
+    <intension note="The woman wearing the Red shirt is somewhere to the left of the woman who likes Australian wines."> lt(Red,Australian) </intension>
+    <intension note="Ms Wilson is next to the 30-year-old woman."> eq(dist(Wilson,y30),1) </intension>
+    <intension note="Leslie is exactly to the left of the 30-year-old woman."> eq(Leslie,sub(y30,1)) </intension>
+    <intension note="Holly is somewhere to the right of the woman wearing the Red shirt."> lt(Red,Holly) </intension>
+    <intension note="Ms Brown is exactly to the left of Julie."> eq(Brown,sub(Julie,1)) </intension>
+    <intension note="The youngest woman likes Penne."> eq(y30,Penne) </intension>
+    <intension note="Ms Wilson is wearing the White shirt."> eq(Wilson,White) </intension>
+    <intension note="The woman who likes Lasagne is somewhere between the woman who likes Italian wines..."> lt(Italian,Lasagne) </intension>
+    <intension note="...and the woman who likes Spaghetti, in that order."> lt(Lasagne,Spaghetti) </intension>
+    <intension note="At the second position is the woman wearing the Blue shirt."> eq(Blue,2) </intension>
+    <intension note="The 40-year-old woman likes Lasagne."> eq(y40,Lasagne) </intension>
+    <intension note="Ms Lopes is at the fifth position."> eq(Lopes,5) </intension>
+    <intension note="The woman that likes Australian wines is somewhere between Victoria..."> lt(Victoria,Australian) </intension>
+    <intension note="...and the woman who likes wines from Bordeaux, in that order."> lt(Australian,Bordeaux) </intension>
+    <intension note="The woman wearing the Yellow shirt is exactly to the left of the 35-year-old woman."> eq(Yellow,sub(y35,1)) </intension>
+  </constraints>
+</instance>

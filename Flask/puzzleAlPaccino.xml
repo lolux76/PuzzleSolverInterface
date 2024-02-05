@@ -1,0 +1,191 @@
+<instance format="XCSP3" type="CSP">
+  <variables>
+    <array id="Monday" note="Day [times , films , names]" size="[3]"> 0..4 </array>
+    <array id="Tuesday" size="[3]"> 0..4 </array>
+    <array id="Wednesday" size="[3]"> 0..4 </array>
+    <array id="Thursday" size="[3]"> 0..4 </array>
+    <array id="Friday" size="[3]"> 0..4 </array>
+    <array id="timesSecondaires" note="Variables auxiliaires" size="[5]"> 0 1 2 3 4 </array>
+    <array id="filmsSecondaires" size="[5]"> 0 1 2 3 4 </array>
+    <array id="namesSecondaires" size="[5]"> 0 1 2 3 4 </array>
+    <array id="TIMES" note="Use-full variables to map TIMES, order : 0= Monday, 1=Tuesday, 2=Wednesday, 3=Thursday, 4=Friday" size="[5]"> 0..4 </array>
+    <array id="FILMS" note="Use-full variables to map FILMS, order : 0= Monday, 1=Tuesday, 2=Wednesday, 3=Thursday, 4=Friday" size="[5]"> 0..4 </array>
+    <array id="NAMES" note="Use-full variables to map NAMES, order : 0= Monday, 1=Tuesday, 2=Wednesday, 3=Thursday, 4=Friday" size="[5]"> 0..4 </array>
+    <array id="timesVarDomain" note="Constraint Element cant read in native python list" size="[5]"> 1175 1180 1220 1230 1245 </array>
+    <array id="filmsVarDomain" size="[5]" type="symbolic"> Donnie Brasco Minutes 88 Scarecrow Scarface The Recruit </array>
+    <array id="namesVarDomain" size="[5]" type="symbolic"> Jessica Laurie Mark Mary Sally </array>
+    <var id="T30" note="2. The latest of the 19-hundreds releases was shown at 30 minutes past the hour."> 30 </var>
+    <array id="aux_gb" note="aux_gb[i] is the ith auxiliary variable having been automatically introduced" size="[10]">
+      <domain for="aux_gb[0] aux_gb[2..3] aux_gb[6]"> 0..4 </domain>
+      <domain for="aux_gb[1] aux_gb[4] aux_gb[7..8]"> 1175..1245 </domain>
+      <domain for="aux_gb[5]"> 1240..1310 </domain>
+      <domain for="aux_gb[9]"> 1215..1285 </domain>
+    </array>
+    <var id="T65" note="5. Mark, whose choice was Scarecrow, had a showing at a time of one hour and five minutes after that of Scarface."> 65 </var>
+    <var id="T20" note="7. 88 Minutes showed at a time both 40 minutes to the hour and 40 minutes after the Thursday showing."> 20 </var>
+  </variables>
+  <constraints>
+    <allDifferent> Monday[0] Tuesday[0] Wednesday[0] Thursday[0] Friday[0] </allDifferent>
+    <allDifferent> Monday[1] Tuesday[1] Wednesday[1] Thursday[1] Friday[1] </allDifferent>
+    <allDifferent> Monday[2] Tuesday[2] Wednesday[2] Thursday[2] Friday[2] </allDifferent>
+    <allDifferent> timesSecondaires[] </allDifferent>
+    <intension> imp(eq(Monday[0],1),eq(timesSecondaires[1],0)) </intension>
+    <intension> imp(eq(Tuesday[0],1),eq(timesSecondaires[1],1)) </intension>
+    <intension> imp(eq(Wednesday[0],1),eq(timesSecondaires[1],2)) </intension>
+    <intension> imp(eq(Thursday[0],1),eq(timesSecondaires[1],3)) </intension>
+    <intension> imp(eq(Friday[0],1),eq(timesSecondaires[1],4)) </intension>
+    <intension> imp(eq(Monday[0],2),eq(timesSecondaires[2],0)) </intension>
+    <intension> imp(eq(Tuesday[0],2),eq(timesSecondaires[2],1)) </intension>
+    <intension> imp(eq(Wednesday[0],2),eq(timesSecondaires[2],2)) </intension>
+    <intension> imp(eq(Thursday[0],2),eq(timesSecondaires[2],3)) </intension>
+    <intension> imp(eq(Friday[0],2),eq(timesSecondaires[2],4)) </intension>
+    <intension> imp(eq(Monday[0],3),eq(timesSecondaires[3],0)) </intension>
+    <intension> imp(eq(Tuesday[0],3),eq(timesSecondaires[3],1)) </intension>
+    <intension> imp(eq(Wednesday[0],3),eq(timesSecondaires[3],2)) </intension>
+    <intension> imp(eq(Thursday[0],3),eq(timesSecondaires[3],3)) </intension>
+    <intension> imp(eq(Friday[0],3),eq(timesSecondaires[3],4)) </intension>
+    <intension> imp(eq(Monday[0],4),eq(timesSecondaires[4],0)) </intension>
+    <intension> imp(eq(Tuesday[0],4),eq(timesSecondaires[4],1)) </intension>
+    <intension> imp(eq(Wednesday[0],4),eq(timesSecondaires[4],2)) </intension>
+    <intension> imp(eq(Thursday[0],4),eq(timesSecondaires[4],3)) </intension>
+    <intension> imp(eq(Friday[0],4),eq(timesSecondaires[4],4)) </intension>
+    <allDifferent> filmsSecondaires[] </allDifferent>
+    <intension> imp(eq(Monday[1],1),eq(filmsSecondaires[1],0)) </intension>
+    <intension> imp(eq(Tuesday[1],1),eq(filmsSecondaires[1],1)) </intension>
+    <intension> imp(eq(Wednesday[1],1),eq(filmsSecondaires[1],2)) </intension>
+    <intension> imp(eq(Thursday[1],1),eq(filmsSecondaires[1],3)) </intension>
+    <intension> imp(eq(Friday[1],1),eq(filmsSecondaires[1],4)) </intension>
+    <intension> imp(eq(Monday[1],2),eq(filmsSecondaires[2],0)) </intension>
+    <intension> imp(eq(Tuesday[1],2),eq(filmsSecondaires[2],1)) </intension>
+    <intension> imp(eq(Wednesday[1],2),eq(filmsSecondaires[2],2)) </intension>
+    <intension> imp(eq(Thursday[1],2),eq(filmsSecondaires[2],3)) </intension>
+    <intension> imp(eq(Friday[1],2),eq(filmsSecondaires[2],4)) </intension>
+    <intension> imp(eq(Monday[1],3),eq(filmsSecondaires[3],0)) </intension>
+    <intension> imp(eq(Tuesday[1],3),eq(filmsSecondaires[3],1)) </intension>
+    <intension> imp(eq(Wednesday[1],3),eq(filmsSecondaires[3],2)) </intension>
+    <intension> imp(eq(Thursday[1],3),eq(filmsSecondaires[3],3)) </intension>
+    <intension> imp(eq(Friday[1],3),eq(filmsSecondaires[3],4)) </intension>
+    <intension> imp(eq(Monday[1],4),eq(filmsSecondaires[4],0)) </intension>
+    <intension> imp(eq(Tuesday[1],4),eq(filmsSecondaires[4],1)) </intension>
+    <intension> imp(eq(Wednesday[1],4),eq(filmsSecondaires[4],2)) </intension>
+    <intension> imp(eq(Thursday[1],4),eq(filmsSecondaires[4],3)) </intension>
+    <intension> imp(eq(Friday[1],4),eq(filmsSecondaires[4],4)) </intension>
+    <allDifferent> namesSecondaires[] </allDifferent>
+    <intension> imp(eq(Monday[2],1),eq(namesSecondaires[1],0)) </intension>
+    <intension> imp(eq(Tuesday[2],1),eq(namesSecondaires[1],1)) </intension>
+    <intension> imp(eq(Wednesday[2],1),eq(namesSecondaires[1],2)) </intension>
+    <intension> imp(eq(Thursday[2],1),eq(namesSecondaires[1],3)) </intension>
+    <intension> imp(eq(Friday[2],1),eq(namesSecondaires[1],4)) </intension>
+    <intension> imp(eq(Monday[2],2),eq(namesSecondaires[2],0)) </intension>
+    <intension> imp(eq(Tuesday[2],2),eq(namesSecondaires[2],1)) </intension>
+    <intension> imp(eq(Wednesday[2],2),eq(namesSecondaires[2],2)) </intension>
+    <intension> imp(eq(Thursday[2],2),eq(namesSecondaires[2],3)) </intension>
+    <intension> imp(eq(Friday[2],2),eq(namesSecondaires[2],4)) </intension>
+    <intension> imp(eq(Monday[2],3),eq(namesSecondaires[3],0)) </intension>
+    <intension> imp(eq(Tuesday[2],3),eq(namesSecondaires[3],1)) </intension>
+    <intension> imp(eq(Wednesday[2],3),eq(namesSecondaires[3],2)) </intension>
+    <intension> imp(eq(Thursday[2],3),eq(namesSecondaires[3],3)) </intension>
+    <intension> imp(eq(Friday[2],3),eq(namesSecondaires[3],4)) </intension>
+    <intension> imp(eq(Monday[2],4),eq(namesSecondaires[4],0)) </intension>
+    <intension> imp(eq(Tuesday[2],4),eq(namesSecondaires[4],1)) </intension>
+    <intension> imp(eq(Wednesday[2],4),eq(namesSecondaires[4],2)) </intension>
+    <intension> imp(eq(Thursday[2],4),eq(namesSecondaires[4],3)) </intension>
+    <intension> imp(eq(Friday[2],4),eq(namesSecondaires[4],4)) </intension>
+    <intension> eq(Monday[0],TIMES[0]) </intension>
+    <intension> eq(Tuesday[0],TIMES[1]) </intension>
+    <intension> eq(Wednesday[0],TIMES[2]) </intension>
+    <intension> eq(Thursday[0],TIMES[3]) </intension>
+    <intension> eq(Friday[0],TIMES[4]) </intension>
+    <intension> eq(Monday[1],FILMS[0]) </intension>
+    <intension> eq(Tuesday[1],FILMS[1]) </intension>
+    <intension> eq(Wednesday[1],FILMS[2]) </intension>
+    <intension> eq(Thursday[1],FILMS[3]) </intension>
+    <intension> eq(Friday[1],FILMS[4]) </intension>
+    <intension> eq(Monday[2],NAMES[0]) </intension>
+    <intension> eq(Tuesday[2],NAMES[1]) </intension>
+    <intension> eq(Wednesday[2],NAMES[2]) </intension>
+    <intension> eq(Thursday[2],NAMES[3]) </intension>
+    <intension> eq(Friday[2],NAMES[4]) </intension>
+    <intension> eq(timesVarDomain[0],1175) </intension>
+    <intension> eq(filmsVarDomain[0],Scarface) </intension>
+    <intension> eq(namesVarDomain[0],Sally) </intension>
+    <intension> eq(timesVarDomain[1],1180) </intension>
+    <intension> eq(filmsVarDomain[1],Scarecrow) </intension>
+    <intension> eq(namesVarDomain[1],Mary) </intension>
+    <intension> eq(timesVarDomain[2],1220) </intension>
+    <intension> eq(filmsVarDomain[2],Donnie Brasco) </intension>
+    <intension> eq(namesVarDomain[2],Jessica) </intension>
+    <intension> eq(timesVarDomain[3],1230) </intension>
+    <intension> eq(filmsVarDomain[3],Minutes 88) </intension>
+    <intension> eq(namesVarDomain[3],Laurie) </intension>
+    <intension> eq(timesVarDomain[4],1245) </intension>
+    <intension> eq(filmsVarDomain[4],The Recruit) </intension>
+    <intension> eq(namesVarDomain[4],Mark) </intension>
+    <intension> eq(dist(filmsSecondaires[3],filmsSecondaires[4]),4) </intension>
+    <intension> ne(Monday[2],namesSecondaires[2]) </intension>
+    <intension> ne(Friday[2],namesSecondaires[2]) </intension>
+    <intension> eq(mod(aux_gb[1],60),T30) </intension>
+    <element>
+      <list> TIMES[] </list>
+      <index> filmsSecondaires[2] </index>
+      <value> aux_gb[0] </value>
+    </element>
+    <element>
+      <list> timesVarDomain[] </list>
+      <index> aux_gb[0] </index>
+      <value> aux_gb[1] </value>
+    </element>
+    <intension> eq(dist(timesSecondaires[0],timesSecondaires[1]),1) </intension>
+    <intension> eq(add(dist(timesSecondaires[2],timesSecondaires[4]),dist(timesSecondaires[2],timesSecondaires[3]),dist(timesSecondaires[3],timesSecondaires[4])),4) </intension>
+    <intension> or(eq(namesSecondaires[3],timesSecondaires[0]),eq(namesSecondaires[3],timesSecondaires[1])) </intension>
+    <intension> ne(namesSecondaires[3],2) </intension>
+    <intension> or(eq(namesSecondaires[0],timesSecondaires[0]),eq(namesSecondaires[0],timesSecondaires[1])) </intension>
+    <intension> ne(namesSecondaires[0],2) </intension>
+    <intension> eq(namesSecondaires[4],filmsSecondaires[1]) </intension>
+    <element>
+      <list> timesVarDomain[] </list>
+      <index> aux_gb[2] </index>
+      <value> aux_gb[5] </value>
+    </element>
+    <group>
+      <element>
+        <list> TIMES[] </list>
+        <index> %0 </index>
+        <value> %1 </value>
+      </element>
+      <args> namesSecondaires[4] aux_gb[2] </args>
+      <args> filmsSecondaires[0] aux_gb[3] </args>
+    </group>
+    <element>
+      <list> timesVarDomain[] </list>
+      <index> aux_gb[3] </index>
+      <value> aux_gb[4] </value>
+    </element>
+    <intension> eq(add(aux_gb[4],T65),aux_gb[5]) </intension>
+    <intension> ne(namesSecondaires[1],1) </intension>
+    <intension> ne(namesSecondaires[2],1) </intension>
+    <intension> ne(namesSecondaires[1],3) </intension>
+    <intension> ne(namesSecondaires[2],3) </intension>
+    <intension> eq(mod(aux_gb[7],60),T20) </intension>
+    <element>
+      <list> timesVarDomain[] </list>
+      <index> aux_gb[6] </index>
+      <value> aux_gb[9] </value>
+    </element>
+    <element>
+      <list> TIMES[] </list>
+      <index> filmsSecondaires[3] </index>
+      <value> aux_gb[6] </value>
+    </element>
+    <group>
+      <element>
+        <list> timesVarDomain[] </list>
+        <index> %0 </index>
+        <value> %1 </value>
+      </element>
+      <args> aux_gb[6] aux_gb[7] </args>
+      <args> TIMES[3] aux_gb[8] </args>
+    </group>
+    <intension> eq(add(aux_gb[8],40),aux_gb[9]) </intension>
+  </constraints>
+</instance>

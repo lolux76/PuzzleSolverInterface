@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/film.css') }}">
+    <link rel="icon" href="{{ url_for('favicon') }}" type="image/favicon.icon">
+    <title>Movie buffs associated</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo" id="image">
+
+        <h1 class="fade-in">Movie buffs associated</h1>
+
+        <p class="fade-in">
+
+A five-member panel, determined by a ballot of members of the local Movie Buffs Associated at the Annual General Meeting, select a series of movies, starring a particular actor/actress, to be shown in the Municipal Offices function room each evening from Monday to Friday. The panel of Sally Boyden, Mark Thomson, Jessica Farmer, Laurie Davison and Mary Peters were re-elected for 2015.
+
+Last week their choice actor/actress was Al Pacino, and the films chosen - one per member - were Scarface (1983), Scarecrow (1973), Donnie Brasco (1997), 88 Minutes (2007), and The Recruit (2003). The films chosen were not respective, and neither were they shown in that order, nor in the order in which they were released. Showing time differed each evening. From this information and the following clues, for each member, can you determine who chose which film, the day on which it was shown, and at what time?"
+</p>
+
+
+        <table border="1" class="table fade-in">
+
+        <tbody>
+
+            <tr>
+
+                <td></td>
+
+                <td><table class="top-table">
+        <tbody>
+            <tr>
+                <td colspan="5">Film</td>
+            </tr>
+            <tr>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            88 Minutes
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Donnie Brasco
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Scarecrow
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Scarface
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            The Recruit
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table></td>
+
+                <td><table class="top-table">
+        <tbody>
+            <tr>
+                <td colspan="5">Day</td>
+            </tr>
+            <tr>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Monday
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Tuesday
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Wednesday
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Thursday
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Friday
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table></td>
+
+                <td><table class="top-table">
+        <tbody>
+            <tr>
+                <td colspan="5">Time</td>
+            </tr>
+            <tr>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            7:35 pm
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            7:40 pm
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            8:20 pm
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            8:30 pm
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            8:45 pm
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table></td>
+
+            </tr>
+
+            <tr>
+
+                <td><table class="side-table">
+        <tbody>
+
+            <tr>
+
+                <td rowspan="5">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Name
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">Jessica</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Laurie</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Mark</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Mary</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Sally</td>
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+            </tr>
+
+            <tr>
+
+                <td><table class="side-table">
+        <tbody>
+
+            <tr>
+
+                <td rowspan="5">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Time
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">7:35 pm</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">7:40 pm</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">8:20 pm</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">8:30 pm</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">8:45 pm</td>
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+
+
+            </tr>
+
+            <tr>
+
+                <td><table class="side-table">
+        <tbody>
+
+            <tr>
+
+                <td rowspan="5">
+                    <div class="vertical-text">
+                        <div class="vertical-text-inner">
+                            Day
+                        </div>
+                    </div>
+                </td>
+
+                <td class="js-item">Monday</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Tuesday</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Wednesday</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Thursday</td>
+            </tr>
+
+            <tr>
+
+                <td class="js-item">Friday</td>
+            </tr>
+
+        </tbody>
+    </table></td>
+
+                <td><table class="middle-table">
+        <tbody>
+
+            <tr>
+
+                <td data-x="0" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="0"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="0"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="1"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="1"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="2"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="2"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="3"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="3"><span>&nbsp;</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td data-x="0" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="1" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="2" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="3" data-y="4"><span>&nbsp;</span></td>
+
+                <td data-x="4" data-y="4"><span>&nbsp;</span></td>
+
+            </tr>
+
+        </tbody>
+    </table></td>
+
+
+
+
+
+            </tr>
+
+        </tbody>
+
+
+        </table>
+
+        <button id="submit-button" class="fade-in submit-button">Soumettre</button>
+
+        <hr class="fade-in">
+
+        <div class="clues fade-in">Indices
+            <hr class="fade-in">
+            <ul>
+
+
+                                <li data-clue-id="0" style="">1. Of the 20-hundreds releases, neither of which was Jessica's choice, one opened the week and one closed the week.</li>
+
+                                <li data-clue-id="1" style="">2. The latest of the 19-hundreds releases was shown at 30 minutes past the hour.</li>
+
+                                <li data-clue-id="2">3. The releases shown before 8:00 pm were on consecutive days, as were the releases shown after 8:00 pm.</li>
+
+                                <li data-clue-id="3">4. One of the men and one of the women had a showing before 8:00 pm, but neither was mid-week.</li>
+
+                                <li data-clue-id="4">5. Mark, whose choice was Scarecrow, had a showing at a time of one hour and five minutes after that of Scarface.</li>
+
+                                <li data-clue-id="5">6. Neither Miss Farmer nor Miss Peters had a showing on an even-numbered day</li>
+
+                                <li data-clue-id="6">7. 88 Minutes showed at a time both 40 minutes to the hour and 40 minutes after the Thursday showing.</li>
+
+
+
+            </ul>
+        </div>
+
+
+        <img src="{{ url_for('static', filename='puzzle-piece.svg') }}" alt="Logo" class="logo_reverse" id="image2">
+
+    </div>
+
+    <footer>
+        <p>© 2024 <a href="https://www.linkedin.com/in/nathan-badoual-931a0b206/">Nathan Badoual</a> et <a href="https://www.linkedin.com/in/mat%C3%A9o-grimaud-1304a2210/">Matéo Grimaud</a>. Réalisé avec passion et beaucoup d'amour.</p>
+    </footer>
+
+</body>
+</html>
+
+<script>
+
+    document.getElementById('image').addEventListener('mouseover', function() {
+
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+
+    document.getElementById('image').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f2f2f2';
+    });
+
+    document.getElementById('image2').addEventListener('mouseover', function() {
+
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+
+    document.getElementById('image2').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f2f2f2';
+    });
+
+
+    // Logique du tableau
+document.addEventListener('DOMContentLoaded', function () {
+    // Récupérer tous les tbody
+    var tableList = document.querySelectorAll('.middle-table');
+
+    // Ajouter un gestionnaire d'événements à chaque tbody
+    tableList.forEach(function (table) {
+        // Récupérer toutes les cellules de ce tbody ayant les attributs data-x et data-y
+        var cells = table.querySelectorAll('td[data-x][data-y]:not(.js-item)');
+
+        // Ajouter un gestionnaire d'événements à chaque cellule
+        cells.forEach(function (cell) {
+            cell.addEventListener('click', function () {
+                // Récupérer les indices x et y de la cellule
+                var x = cell.getAttribute('data-x');
+                var y = cell.getAttribute('data-y');
+
+                // Marquer la cellule comme "validée"
+                cell.classList.add('validated');
+                if(cell.classList.contains('invalidated')){
+                    cell.classList.remove('invalidated');
+                }
+
+                // Marquer les autres cellules de la même ligne comme "invalide"
+                cells.forEach(function (otherCell) {
+                    if (otherCell.getAttribute('data-y') === y && otherCell !== cell) {
+                        otherCell.classList.add('invalidated');
+                        if(otherCell.classList.contains('validated')){
+                            otherCell.classList.remove('validated');
+                        }
+                    }
+                });
+
+                // Marquer les autres cellules de la même colonne comme "invalide"
+                cells.forEach(function (otherCell) {
+                    if (otherCell.getAttribute('data-x') === x && otherCell !== cell) {
+                        otherCell.classList.add('invalidated');
+                        if(otherCell.classList.contains('validated')){
+                            otherCell.classList.remove('validated');
+                        }
+                    }
+                });
+            });
+        });
+    });
+
+    // Ajouter un gestionnaire d'événements au bouton d'envoi
+    var submitButton = document.getElementById('submit-button');
+    submitButton.addEventListener('click', function () {
+        // Récupérer les cellules validées
+        var validatedCells = document.querySelectorAll('.validated');
+
+        // Envoyer les données au backend (vous devez implémenter cette partie)
+        // Vous pouvez utiliser fetch() ou tout autre moyen pour envoyer les données au serveur
+        // par exemple, vous pouvez les envoyer en tant que tableau d'indices x et y des cellules validées
+        var dataToSend = Array.from(validatedCells).map(function (cell) {
+            return {
+                x: cell.getAttribute('data-x'),
+                y: cell.getAttribute('data-y')
+            };
+        });
+
+        // Exemple d'utilisation de fetch() pour envoyer les données
+        fetch('/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataToSend)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Backend response:', data);
+        })
+        .catch(error => {
+            console.error('Error during fetch:', error);
+        });
+    });
+});
+</script>
