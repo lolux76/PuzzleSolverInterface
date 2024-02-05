@@ -197,37 +197,14 @@ def logic_puzzle_alPacino():
     if result is SAT:
         # Afficher les résultats
         print("Solution found:")
-
-        print("Monday:")
-        print("\tHour : ", timesDomain[values(TIMES)[values(Monday[0])]], "//",
-              timesDomain[values(TIMES)[values(Monday[0])]] // 60 - 12, ":",
-              timesDomain[values(TIMES)[values(Monday[0])]] % 60)
-        print("\tFilm : ", filmsDomain[values(FILMS)[values(Monday[1])]])
-        print("\tName : ", namesDomain[values(NAMES)[values(Monday[2])]])
-
-        print("Tuesday:")
-        print("\tHour : ", timesDomain[values(TIMES)[values(Tuesday[0])]] // 60 - 12, ":",
-              timesDomain[values(TIMES)[values(Tuesday[0])]] % 60)
-        print("\tFilm : ", filmsDomain[values(FILMS)[values(Tuesday[1])]])
-        print("\tName : ", namesDomain[values(NAMES)[values(Tuesday[2])]])
-
-        print("Wednesday:")
-        print("\tHour : ", timesDomain[values(TIMES)[values(Wednesday[0])]] // 60 - 12, ":",
-              timesDomain[values(TIMES)[values(Wednesday[0])]] % 60)
-        print("\tFilm : ", filmsDomain[values(FILMS)[values(Wednesday[1])]])
-        print("\tName : ", namesDomain[values(NAMES)[values(Wednesday[2])]])
-
-        print("Thursday:")
-        print("\tHour : ", timesDomain[values(TIMES)[values(Thursday[0])]] // 60 - 12, ":",
-              timesDomain[values(TIMES)[values(Thursday[0])]] % 60)
-        print("\tFilm : ", filmsDomain[values(FILMS)[values(Thursday[1])]])
-        print("\tName : ", namesDomain[values(NAMES)[values(Thursday[2])]])
-
-        print("Friday:")
-        print("\tHour : ", timesDomain[values(TIMES)[values(Friday[0])]] // 60 - 12, ":",
-              timesDomain[values(TIMES)[values(Friday[0])]] % 60)
-        print("\tFilm : ", filmsDomain[values(FILMS)[values(Friday[1])]])
-        print("\tName : ", namesDomain[values(NAMES)[values(Friday[2])]])
+        print("Solution Monday:", values(Monday))
+        print("Solution Tuesday:", values(Tuesday))
+        print("Solution Wednesday:", values(Wednesday))
+        print("Solution Thursday:", values(Thursday))
+        print("Solution Friday:", values(Friday))
+        print("Solution times values\t\t", [timesDomain[values(TIMES)[i]] for i in range(0, 5)])
+        print("Solution films values\t\t", [filmsDomain[values(FILMS)[i]] for i in range(0, 5)])
+        print("Solution names values\t\t", [namesDomain[values(NAMES)[i]] for i in range(0, 5)])
 
         return Monday, Tuesday, Wednesday, Thursday, Friday
 

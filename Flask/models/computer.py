@@ -233,42 +233,16 @@ def logic_puzzle_computer():
         # print("Solution processorsSecondaires:",values(processorsSecondaires))
         # print("Solution monitorsSecondaires:",values(monitorsSecondaires))
         # print("Solution pricesSecondaires:",values(pricesSecondaires))
-        """
-        print("Solution Andrew:",values(Andrew))
-        print("Solution PCA:",values(PCA))
-        print("Solution PCB:",values(PCB))
-        print("Solution PCC:",values(PCC))
-        print("Solution PCD:",values(PCD))
-        print("Solution XN:",values(XN))
-        print("Solution processors values\t",[processorsDomain[values(PROCESSORS)[i]]/10 for i in range(0,5)])
-        print("Solution HD values\t\t",[hardDisksDomain[values(HARDDISKS)[i]] for i in range(0,5)])
-        print("Solution monitors values\t",[monitorsDomain[values(MONITORS)[i]]/10 for i in range(0,5)])
-        print("Solution prices values\t\t",[pricesDomain[values(PRICES)[i]] for i in range(0,5)])
-        """
-
-        print("Andrew:")
-        print("\tProcessor : ", processorsDomain[values(PROCESSORS)[values(Andrew[0])]] / 10, "MHz")
-        print("\tHD : ", hardDisksDomain[values(HARDDISKS)[values(Andrew[1])]], "Gb")
-        print("\tMonitor : ", monitorsDomain[values(MONITORS)[values(Andrew[2])]] / 10, "'")
-        print("\tPrices : ", pricesDomain[values(PRICES)[values(Andrew[3])]], "€")
-
-        print("PCA:")
-        print("\tProcessor : ", processorsDomain[values(PROCESSORS)[values(PCA[0])]] / 10, "MHz")
-        print("\tHD : ", hardDisksDomain[values(HARDDISKS)[values(PCA[1])]], "Gb")
-        print("\tMonitor : ", monitorsDomain[values(MONITORS)[values(PCA[2])]] / 10, "'")
-        print("\tPrices : ", pricesDomain[values(PRICES)[values(PCA[3])]], "€")
-
-        print("PCB:")
-        print("\tProcessor : ", processorsDomain[values(PROCESSORS)[values(PCB[0])]] / 10, "MHz")
-        print("\tHD : ", hardDisksDomain[values(HARDDISKS)[values(PCB[1])]], "Gb")
-        print("\tMonitor : ", monitorsDomain[values(MONITORS)[values(PCB[2])]] / 10, "'")
-        print("\tPrices : ", pricesDomain[values(PRICES)[values(PCB[3])]], "€")
-
-        print("PCC:")
-        print("\tProcessor : ", processorsDomain[values(PROCESSORS)[values(PCC[0])]] / 10, "MHz")
-        print("\tHD : ", hardDisksDomain[values(HARDDISKS)[values(PCC[1])]], "Gb")
-        print("\tMonitor : ", monitorsDomain[values(MONITORS)[values(PCC[2])]] / 10, "'")
-        print("\tPrices : ", pricesDomain[values(PRICES)[values(PCC[3])]], "€")
+        print("Solution Andrew:", values(Andrew))
+        print("Solution PCA:", values(PCA))
+        print("Solution PCB:", values(PCB))
+        print("Solution PCC:", values(PCC))
+        print("Solution PCD:", values(PCD))
+        print("Solution XN:", values(XN))
+        print("Solution processors values\t", [processorsDomain[values(PROCESSORS)[i]] / 10 for i in range(0, 5)])
+        print("Solution HD values\t\t", [hardDisksDomain[values(HARDDISKS)[i]] for i in range(0, 5)])
+        print("Solution monitors values\t", [monitorsDomain[values(MONITORS)[i]] / 10 for i in range(0, 5)])
+        print("Solution prices values\t\t", [pricesDomain[values(PRICES)[i]] for i in range(0, 5)])
 
 
 if __name__ == "__main__":
