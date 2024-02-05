@@ -2,7 +2,7 @@
 
 ## INSTALLATION
 
-`git clone git@github.com:lolux76/PuzzleSolverInterface.git
+`git clone git@github.com:lolux76/PuzzleSolverInterface.git`
 
 `pip install -r Flask/requirements.txt`
 
