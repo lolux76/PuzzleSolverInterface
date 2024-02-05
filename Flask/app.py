@@ -78,15 +78,12 @@ def home():
 @app.route('/submit', methods=['POST'])
 def submit():
     try:
-        # Récupérer les données envoyées depuis le frontend
         data = request.get_json()
 
         # Vérifier les contraintes à l'aide des modèles PyCSP
         print(puzzleAlPaccino.logic_puzzle_alPacino(), file=sys.stderr)
         result = ""
 
-
-        # Retourner le résultat au frontend
         return jsonify({'success': result})
 
     except Exception as e:
